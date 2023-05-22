@@ -1,5 +1,4 @@
 # backup-mysql
-script backup-mysql-mariadb
 Giải thích các bước:
 - Bước 1: Đặt các biến cho tên người dùng, mật khẩu, tên cơ sở dữ liệu, thư mục lưu trữ sao lưu và số ngày tối đa để giữ các tệp sao lưu.
 - Bước 2: Kiểm tra xem thư mục sao lưu có tồn tại không. Nếu không, thư mục sẽ được tạo ra.
