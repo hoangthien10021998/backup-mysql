@@ -16,7 +16,7 @@ fi
 BACKUP_FILE="$BACKUP_DIR/$DATABASE-$(date +%Y-%m-%d_%H-%M-%S).sql"
 
 # Create backup using mysqldump
-mysqldump --user=$USER --password=$PASSWORD $DATABASE > $BACKUP_FILE
+mysqldump --routines --triggers --events --user=$USER --password=$PASSWORD $DATABASE > $BACKUP_FILE
 
 # Remove backups older than MAX_AGE days
 find $BACKUP_DIR -type f -name "$DATABASE-*.sql" -mtime +$MAX_AGE -exec rm {} \;
